@@ -1,0 +1,112 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #1f2937; line-height: 1.6; }
+
+/* BANNER - UNCHANGED */
+.hero-banner { 
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/bg.jpg') center/cover;
+  height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white;
+}
+.hero-title { font-family: 'Orbitron', sans-serif; font-size: 3.5rem; }
+.highlight { color: #a855f7; }
+.hero-tagline { color: #22d3ee; font-size: 1.4rem; margin: 10px 0; }
+.hero-btn { background: #fff; padding: 12px 28px; border-radius: 4px; font-weight: 700; border: none; cursor: pointer; }
+
+/* VERTICAL META - UNCHANGED */
+.meta-section { background: #fff; padding: 80px 10%; border-bottom: 1px solid #e5e7eb; }
+.meta-container { display: flex; flex-direction: column; gap: 15px; }
+
+/* NAV - UNCHANGED */
+.horizontal-nav { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #e5e7eb; z-index: 100; }
+.horizontal-nav ul { display: flex; list-style: none; justify-content: center; }
+.horizontal-nav a { display: block; padding: 25px 35px; text-decoration: none; color: #4b5563; font-weight: 600; }
+
+/* CONTENT CARDS & SPACING - UNCHANGED */
+.main-content { max-width: 1100px; margin: 100px auto; }
+.card { background: #fff; padding: 80px; margin-bottom: 120px; border-radius: 12px; border: 1px solid #e5e7eb; }
+.card-heading { font-size: 2rem; border-left: 6px solid #3b82f6; padding-left: 20px; margin-bottom: 60px; }
+.text-block p { margin-bottom: 30px; font-size: 1.15rem; }
+.spacious-list li { margin-bottom: 30px; font-size: 1.15rem; list-style-position: inside; }
+
+/* TIMELINE - REFINED TO MATCH IMAGE */
+.timeline-container { 
+    border-left: 2px solid #e5e7eb; 
+    margin-left: 120px; 
+    padding-left: 40px; 
+}
+.timeline-item { 
+    margin-bottom: 100px; 
+    position: relative; 
+}
+.timeline-marker { 
+    position: absolute; 
+    left: -160px; 
+    text-align: right; 
+    width: 100px; 
+}
+.timeline-marker .day { font-size: 2.2rem; font-weight: 700; display: block; color: #1f2937; }
+.timeline-marker .month { font-size: 1.1rem; color: #6b7280; font-weight: 600; }
+
+.timeline-inner-card { 
+    background: #fff; 
+    border: 1px solid #e5e7eb; 
+    padding: 50px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+.unstop-badge-container { margin-bottom: 20px; }
+.unstop-badge { 
+    background: #f3f4f6; 
+    padding: 6px 16px; 
+    border-radius: 30px; 
+    font-size: 0.95rem; 
+    border: 1px solid #e5e7eb;
+}
+.timeline-inner-card h4 { font-size: 1.6rem; margin-bottom: 20px; color: #111827; }
+.timeline-inner-card p { font-size: 1.15rem; color: #4b5563; margin-bottom: 30px; }
+
+.timeline-footer { 
+    border-top: 1px solid #f3f4f6; 
+    padding-top: 30px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-end; 
+}
+.footer-dates p { font-size: 1rem; color: #374151; margin-bottom: 8px; }
+.footer-dates p:last-child { margin-bottom: 0; }
+.results-btn { 
+    padding: 10px 25px; 
+    border: 1px solid #d1d5db; 
+    background: #fff; 
+    border-radius: 6px; 
+    font-weight: 600; 
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* DEADLINES - UPDATED GRID FOR MORE SPACE */
+.deadline-grid { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 40px; 
+}
+.deadline-box { 
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+    padding: 20px 0;
+    border-bottom: 1px solid #f3f4f6;
+}
+.deadline-box:last-child { border-bottom: none; }
+.calendar-icon { font-size: 2rem; }
+.deadline-title { font-weight: 700; font-size: 1.25rem; color: #111827; margin-bottom: 5px; }
+.deadline-date { font-size: 1.15rem; color: #4b5563; }
+
+/* PRIZES - UNCHANGED */
+.prizes-row { display: flex; justify-content: space-around; align-items: flex-end; gap: 40px; }
+.prize-card { background: #fff; padding: 40px; border-radius: 20px; border: 1px solid #e5e7eb; flex: 1; text-align: center; }
+.prize-card img { width: 100%; border-radius: 10px; margin-bottom: 25px; }
+.gold-border { border-top: 10px solid #fbbf24; transform: scale(1.1); }
+.silver-border { border-top: 10px solid #9ca3af; }
+.bronze-border { border-top: 10px solid #b45309; }
+.p-rank { font-weight: 700; font-size: 1.2rem; }
+.p-val { font-size: 2rem; color: #3b82f6; font-weight: 700; margin-top: 10px; }
